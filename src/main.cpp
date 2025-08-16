@@ -22,13 +22,24 @@ std::vector<uint8_t> read_binary_file(const std::string &file_path) {
   return buffer;
 }
 
-int main() {
+int main(int argc, char **argv) {
   std::cout << "Hello World!\n";
 
-  const std::vector<uint8_t> binary = read_binary_file("test.elf");
+  if (argc < 2) {
+    std::cout << "no input file specified\n";
+    return -1;
+  }
+
+  const std::vector<uint8_t> binary = read_binary_file(argv[1]);
   using namespace riscv;
 
   Machine<RISCV64> machine{binary};
+
+  machine.install_syscall_handler(1, [](auto &m) -> void {
+    auto exit_code = m.cpu.reg(10);
+    std::cout << "process stopped with exit code " << exit_code << "\n";
+    m.stop();
+  });
 
   machine.simulate();
 }

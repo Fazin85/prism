@@ -1,0 +1,3 @@
+/home/fazin85/prism/system/main_menu/CMakeFiles/main_menu.elf.dir
+/home/fazin85/prism/system/main_menu/CMakeFiles/edit_cache.dir
+/home/fazin85/prism/system/main_menu/CMakeFiles/rebuild_cache.dir

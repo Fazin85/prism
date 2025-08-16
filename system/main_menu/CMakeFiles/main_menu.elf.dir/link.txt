@@ -1,0 +1,1 @@
+/usr/bin/riscv64-linux-gnu-g++ -march=rv64imafd -mabi=lp64d -static -nostdlib -nostartfiles -std=c++17 -O2 CMakeFiles/main_menu.elf.dir/src/main.cpp.obj -o main_menu.elf 
