@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/prism.dir/src/main.cpp.o -o prism  third_party/libriscv/lib/libriscv.a -ldl 

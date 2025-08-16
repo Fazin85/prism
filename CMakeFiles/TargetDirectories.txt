@@ -1,0 +1,8 @@
+/home/fazin85/prism/CMakeFiles/prism.dir
+/home/fazin85/prism/CMakeFiles/edit_cache.dir
+/home/fazin85/prism/CMakeFiles/rebuild_cache.dir
+/home/fazin85/prism/third_party/libriscv/CMakeFiles/edit_cache.dir
+/home/fazin85/prism/third_party/libriscv/CMakeFiles/rebuild_cache.dir
+/home/fazin85/prism/third_party/libriscv/lib/CMakeFiles/riscv.dir
+/home/fazin85/prism/third_party/libriscv/lib/CMakeFiles/edit_cache.dir
+/home/fazin85/prism/third_party/libriscv/lib/CMakeFiles/rebuild_cache.dir

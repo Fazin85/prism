@@ -1,0 +1,3 @@
+/home/fazin85/prism/_deps/tinycc-subbuild/CMakeFiles/tinycc-populate.dir
+/home/fazin85/prism/_deps/tinycc-subbuild/CMakeFiles/edit_cache.dir
+/home/fazin85/prism/_deps/tinycc-subbuild/CMakeFiles/rebuild_cache.dir

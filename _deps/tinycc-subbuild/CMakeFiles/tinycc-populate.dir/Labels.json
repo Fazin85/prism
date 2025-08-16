@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/fazin85/prism/_deps/tinycc-subbuild/CMakeFiles/tinycc-populate"
+		},
+		{
+			"file" : "/home/fazin85/prism/_deps/tinycc-subbuild/CMakeFiles/tinycc-populate.rule"
+		},
+		{
+			"file" : "/home/fazin85/prism/_deps/tinycc-subbuild/CMakeFiles/tinycc-populate-complete.rule"
+		},
+		{
+			"file" : "/home/fazin85/prism/_deps/tinycc-subbuild/tinycc-populate-prefix/src/tinycc-populate-stamp/tinycc-populate-build.rule"
+		},
+		{
+			"file" : "/home/fazin85/prism/_deps/tinycc-subbuild/tinycc-populate-prefix/src/tinycc-populate-stamp/tinycc-populate-configure.rule"
+		},
+		{
+			"file" : "/home/fazin85/prism/_deps/tinycc-subbuild/tinycc-populate-prefix/src/tinycc-populate-stamp/tinycc-populate-download.rule"
+		},
+		{
+			"file" : "/home/fazin85/prism/_deps/tinycc-subbuild/tinycc-populate-prefix/src/tinycc-populate-stamp/tinycc-populate-install.rule"
+		},
+		{
+			"file" : "/home/fazin85/prism/_deps/tinycc-subbuild/tinycc-populate-prefix/src/tinycc-populate-stamp/tinycc-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/fazin85/prism/_deps/tinycc-subbuild/tinycc-populate-prefix/src/tinycc-populate-stamp/tinycc-populate-patch.rule"
+		},
+		{
+			"file" : "/home/fazin85/prism/_deps/tinycc-subbuild/tinycc-populate-prefix/src/tinycc-populate-stamp/tinycc-populate-test.rule"
+		},
+		{
+			"file" : "/home/fazin85/prism/_deps/tinycc-subbuild/tinycc-populate-prefix/src/tinycc-populate-stamp/tinycc-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"tinycc-populate"
+		],
+		"name" : "tinycc-populate"
+	}
+}
