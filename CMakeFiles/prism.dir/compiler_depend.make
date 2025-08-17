@@ -22,6 +22,7 @@ CMakeFiles/prism.dir/src/main.cpp.o: src/main.cpp \
   third_party/libriscv/lib/libriscv/posix/signals.hpp \
   third_party/libriscv/lib/libriscv/registers.hpp \
   third_party/libriscv/lib/libriscv/riscvbase.hpp \
+  third_party/libriscv/lib/libriscv/rv32i_instr.hpp \
   third_party/libriscv/lib/libriscv/rva.hpp \
   third_party/libriscv/lib/libriscv/types.hpp \
   third_party/libriscv/lib/libriscv/util/buffer.hpp \
@@ -128,6 +129,7 @@ CMakeFiles/prism.dir/src/main.cpp.o: src/main.cpp \
   /usr/include/c++/13/bits/stl_tree.h \
   /usr/include/c++/13/bits/stl_uninitialized.h \
   /usr/include/c++/13/bits/stl_vector.h \
+  /usr/include/c++/13/bits/stream_iterator.h \
   /usr/include/c++/13/bits/streambuf.tcc \
   /usr/include/c++/13/bits/streambuf_iterator.h \
   /usr/include/c++/13/bits/string_view.tcc \
@@ -176,6 +178,7 @@ CMakeFiles/prism.dir/src/main.cpp.o: src/main.cpp \
   /usr/include/c++/13/iosfwd \
   /usr/include/c++/13/iostream \
   /usr/include/c++/13/istream \
+  /usr/include/c++/13/iterator \
   /usr/include/c++/13/limits \
   /usr/include/c++/13/map \
   /usr/include/c++/13/memory \
@@ -196,6 +199,7 @@ CMakeFiles/prism.dir/src/main.cpp.o: src/main.cpp \
   /usr/include/c++/13/string \
   /usr/include/c++/13/string_view \
   /usr/include/c++/13/system_error \
+  /usr/include/c++/13/thread \
   /usr/include/c++/13/tuple \
   /usr/include/c++/13/type_traits \
   /usr/include/c++/13/typeinfo \
@@ -371,8 +375,6 @@ CMakeFiles/prism.dir/src/main.cpp.o: src/main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
-/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
-
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
@@ -430,6 +432,12 @@ CMakeFiles/prism.dir/src/main.cpp.o: src/main.cpp \
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
+
+/usr/include/x86_64-linux-gnu/bits/semaphore.h:
+
+/usr/include/x86_64-linux-gnu/bits/time.h:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
 
 /usr/include/c++/13/bits/stl_map.h:
 
@@ -501,8 +509,6 @@ third_party/libriscv/lib/libriscv/rva.hpp:
 
 /usr/include/c++/13/bits/memoryfwd.h:
 
-/usr/include/c++/13/bits/max_size_type.h:
-
 /usr/include/c++/13/bits/streambuf.tcc:
 
 /usr/include/c++/13/bits/locale_facets.h:
@@ -545,11 +551,45 @@ third_party/libriscv/lib/libriscv/util/function.hpp:
 
 /usr/include/c++/13/bits/istream.tcc:
 
+/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
+
+/usr/include/c++/13/bits/ranges_util.h:
+
+/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/c++/13/bits/ranges_cmp.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/include/c++/13/condition_variable:
+
+/usr/include/c++/13/iosfwd:
+
+/usr/include/c++/13/bits/erase_if.h:
+
+third_party/libriscv/lib/libriscv/riscvbase.hpp:
+
 /usr/include/wchar.h:
 
 /usr/include/c++/13/bits/shared_ptr_base.h:
 
 /usr/include/c++/13/bits/basic_ios.h:
+
+third_party/libriscv/lib/libriscv/rv32i_instr.hpp:
+
+third_party/libriscv/lib/libriscv_settings.h:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/usr/include/c++/13/bits/align.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+
+/usr/include/c++/13/bits/unique_ptr.h:
+
+/usr/include/c++/13/semaphore:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h:
 
@@ -565,10 +605,6 @@ third_party/libriscv/lib/libriscv/util/buffer.hpp:
 
 /usr/include/c++/13/cstddef:
 
-third_party/libriscv/lib/libriscv/riscvbase.hpp:
-
-/usr/include/c++/13/bits/erase_if.h:
-
 third_party/libriscv/lib/libriscv/memory.hpp:
 
 /usr/include/c++/13/backward/binders.h:
@@ -580,6 +616,12 @@ third_party/libriscv/lib/libriscv/types.hpp:
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
 /usr/include/c++/13/bits/exception_defines.h:
+
+third_party/libriscv/lib/libriscv/memory_inline.hpp:
+
+/usr/include/c++/13/bits/predefined_ops.h:
+
+src/main.cpp:
 
 /usr/include/c++/13/bits/stl_iterator_base_types.h:
 
@@ -597,45 +639,11 @@ third_party/libriscv/lib/libriscv/types.hpp:
 
 /usr/include/alloca.h:
 
-/usr/include/c++/13/bits/ios_base.h:
-
-third_party/libriscv/lib/libriscv_settings.h:
-
-/usr/include/x86_64-linux-gnu/bits/endian.h:
-
-third_party/libriscv/lib/libriscv/memory_inline.hpp:
-
-src/main.cpp:
-
-/usr/include/c++/13/bits/predefined_ops.h:
-
-/usr/include/c++/13/bits/ranges_cmp.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
-/usr/include/c++/13/condition_variable:
-
-/usr/include/c++/13/iosfwd:
-
-/usr/include/c++/13/bits/align.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
-
-/usr/include/c++/13/bits/unique_ptr.h:
-
-/usr/include/c++/13/semaphore:
-
 third_party/libriscv/lib/libriscv/cpu_inline.hpp:
 
 /usr/include/c++/13/iostream:
 
 third_party/libriscv/lib/libriscv/cpu.hpp:
-
-/usr/include/c++/13/bits/stl_vector.h:
-
-/usr/include/x86_64-linux-gnu/sys/types.h:
-
-/usr/include/c++/13/unordered_set:
 
 /usr/include/c++/13/bits/stl_tempbuf.h:
 
@@ -671,15 +679,11 @@ third_party/libriscv/lib/libriscv/machine_vmcall.hpp:
 
 /usr/include/c++/13/bits/hash_bytes.h:
 
-/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
-
-/usr/include/c++/13/bits/ranges_util.h:
-
 /usr/include/c++/13/array:
+
+/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
+
+/usr/include/c++/13/bits/stream_iterator.h:
 
 third_party/libriscv/lib/libriscv/memory_inline_pages.hpp:
 
@@ -711,6 +715,12 @@ third_party/libriscv/lib/libriscv/memory_helpers_paging.hpp:
 
 /usr/include/c++/13/typeinfo:
 
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+
+/usr/include/time.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+
 /usr/include/c++/13/bits/range_access.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h:
@@ -741,6 +751,10 @@ third_party/libriscv/lib/libriscv/machine_inline.hpp:
 
 third_party/libriscv/lib/libriscv/posix/signals.hpp:
 
+/usr/include/c++/13/bits/ios_base.h:
+
+/usr/include/c++/13/iterator:
+
 /usr/include/c++/13/bits/atomic_lockfree_defines.h:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
@@ -764,6 +778,12 @@ third_party/libriscv/lib/libriscv/mmap_cache.hpp:
 /usr/include/c++/13/bits/chrono.h:
 
 /usr/include/c++/13/bits/cxxabi_forced.h:
+
+/usr/include/c++/13/bits/stl_vector.h:
+
+/usr/include/x86_64-linux-gnu/sys/types.h:
+
+/usr/include/c++/13/unordered_set:
 
 /usr/include/c++/13/bits/streambuf_iterator.h:
 
@@ -883,6 +903,10 @@ third_party/libriscv/lib/libriscv/mmap_cache.hpp:
 
 /usr/include/c++/13/set:
 
+/usr/include/c++/13/bits/max_size_type.h:
+
+/usr/include/c++/13/thread:
+
 /usr/include/c++/13/span:
 
 /usr/include/c++/13/stdexcept:
@@ -980,15 +1004,3 @@ third_party/libriscv/lib/libriscv/page.hpp:
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
 /usr/include/x86_64-linux-gnu/bits/sched.h:
-
-/usr/include/x86_64-linux-gnu/bits/time.h:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/usr/include/x86_64-linux-gnu/bits/semaphore.h:
-
-/usr/include/time.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
-
-/usr/include/x86_64-linux-gnu/bits/setjmp.h:

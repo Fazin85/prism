@@ -1,4 +1,5 @@
-extern "C" void _start();
+#include <memory>
+#include <stdio.h>
 
 static long syscall(long number, long arg0 = 0, long arg1 = 0, long arg2 = 0) {
   register long a0 asm("a0") = arg0;
@@ -14,4 +15,7 @@ static long syscall(long number, long arg0 = 0, long arg1 = 0, long arg2 = 0) {
   return result;
 }
 
-void _start() { syscall(1); }
+int main(int argc, char **argv) {
+  printf("Hello World!\n");
+  return 0;
+}

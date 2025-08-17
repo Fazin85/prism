@@ -7,8 +7,8 @@ set(CMAKE_CXX_COMPILER riscv64-linux-gnu-g++)
 
 project(MainMenu)
 
-set(CMAKE_CXX_FLAGS "-march=rv64imafd -mabi=lp64d -static -nostdlib -nostartfiles -std=c++17 -O2")
-set(CMAKE_C_FLAGS "-march=rv64imafd -mabi=lp64d -static -nostdlib -nostartfiles -O2")
+set(CMAKE_CXX_FLAGS "-march=rv64imafd -mabi=lp64d -static -std=c++17 -O2")
+set(CMAKE_C_FLAGS "-march=rv64imafd -mabi=lp64d -static -O2")
 
 add_executable(main_menu.elf src/main.cpp)
 

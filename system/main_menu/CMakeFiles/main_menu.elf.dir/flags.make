@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = 
 
-CXX_FLAGS = -march=rv64imafd -mabi=lp64d -static -nostdlib -nostartfiles -std=c++17 -O2
+CXX_FLAGS = -march=rv64imafd -mabi=lp64d -static -std=c++17 -O2
 
